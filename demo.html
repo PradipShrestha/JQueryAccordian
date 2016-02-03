@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Accordian Demo</title>
+    <script src="jquery-1.12.0.min.js" type="text/javascript"></script>
+    <script src="jQuery.simpleAccordian.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.main-content').simpleAccordian('.title', '.content');
+        });
+    </script>
+</head>
+<body>
+<style type="text/css">
+    body {
+        font-family: Arial;
+        width: 980px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #eee;
+    }
+
+    .title {
+        background: #bbb;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .title:hover {
+        cursor: pointer;
+    }
+
+    .title.active,
+    .title:hover {
+        background: #ccc;
+    }
+
+    .content{
+        display:none;
+        background: #f0f0f0;
+        border: 1px solid #aaa;
+        padding: 20px;
+    }
+
+</style>
+<div id="main-content" class="main-content">
+    <div class="item">
+        <div class="title">Title 1</div>
+        <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus enim est, feugiat at
+            bibendum eget, commodo a neque. Praesent scelerisque elit quis orci commodo, sollicitudin pretium nisl
+            posuere. Pellentesque eget justo neque. Aliquam tristique turpis ex, in imperdiet eros ultricies non. Etiam
+            urna leo, mattis vitae sodales sed, feugiat et ex. Maecenas fermentum ac nisi id convallis. Curabitur a enim
+            ac augue lobortis aliquam. Sed diam dolor, ullamcorper ut sem eu, condimentum volutpat leo. Maecenas
+            scelerisque hendrerit consectetur. Fusce eleifend nec lectus at ultrices. Aenean elementum tortor justo,
+            convallis luctus lacus hendrerit vitae. Vivamus vehicula scelerisque nunc, non facilisis felis aliquet et.
+            In eu diam id est pulvinar ullamcorper. Praesent sodales non mauris eget semper.
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">Title 2</div>
+        <div class="content">Nullam nulla est, luctus at lectus quis, ultrices rutrum arcu. Nunc a risus pretium,
+            pharetra odio at, dignissim ipsum. Maecenas ultrices iaculis metus, at tempor ligula egestas sagittis. Ut
+            dignissim elit turpis, at malesuada metus egestas eu. Ut facilisis, orci ac pretium varius, est ante semper
+            tellus, vel varius arcu est ac leo. Etiam feugiat lacus quis quam tincidunt, vitae bibendum libero mattis.
+            Nam vitae ullamcorper urna. In luctus feugiat iaculis. Fusce et sapien est. Etiam a augue quis risus cursus
+            mattis. Ut venenatis, lectus eget tincidunt viverra, odio augue semper tortor, in aliquam ligula lorem id
+            urna. Fusce eget magna lacus. Donec rhoncus sit amet sapien et convallis. Integer mattis erat non varius
+            ullamcorper. Vivamus vulputate ac diam vitae imperdiet. Donec placerat, magna vitae finibus egestas, orci ex
+            pellentesque erat, eu efficitur diam neque ut purus.
+        </div>
+    </div>
+    <div class="item">
+        <div class="title">Title 3</div>
+        <div class="content">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Aenean laoreet leo eget sollicitudin imperdiet. Nam rhoncus mauris quis mi fringilla viverra. Quisque sit
+            amet dapibus lacus. Donec non faucibus est. Ut non interdum velit. Mauris mi purus, sollicitudin et mollis
+            non, rutrum suscipit sem. In porttitor odio nec nibh euismod condimentum. Nunc bibendum at augue nec
+            fermentum. Sed elementum elit eget tellus congue porttitor vitae ac magna. Vestibulum convallis sagittis
+            gravida. Nunc ac ante varius, vulputate dui a, semper lorem. Phasellus turpis orci, pharetra ac nulla sed,
+            venenatis vulputate lectus. Praesent condimentum a lacus ut ultrices. Proin sagittis finibus urna.
+        </div>
+    </div>
+</div>
+</body>
+</html>
