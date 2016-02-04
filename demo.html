@@ -7,7 +7,7 @@
     <script src="jQuery.simpleAccordian.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
-            $('.main-content').simpleAccordian('.title', '.content');
+            $('.main-content').simpleAccordian({title: '.title', content: '.content'});
         });
     </script>
 </head>
@@ -37,8 +37,8 @@
         background: #ccc;
     }
 
-    .content{
-        display:none;
+    .content {
+        display: none;
         background: #f0f0f0;
         border: 1px solid #aaa;
         padding: 20px;
